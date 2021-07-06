@@ -1,0 +1,288 @@
+2021-7-6 5.0.0.135
+1.Supported Visual Studio 2022
+2.Fix an issue that may cause infinite waiting when unattaching
+3.Clear git historical versions to reduce the size of the repository
+
+2021-6-29 5.0.0.129
+1.Fixed an issue that caused some debugged programs to crash when they were released
+
+2021-6-19 5.0.0.128
+1.Fix the issue that remote debugging does not support lua5.4.3
+
+2021-6-10 5.0.0.127
+1.Fix the problem that if the lua scripts folder is selected as the root directory of the disk when creating a project through the "New Lua Project" dialog box, it will cause an error and crash
+
+2021-6-3 5.0.0.126
+1.Fix the problem that it cannot be injected into the program with the "hardware-enforced stack protection" turned on in the latest version of Windows 10
+
+2021-6-2 5.0.0.125
+1.Fix a memory problem related to the interaction between managed code and unmanaged code
+2.ReleaseNotes is displayed in the plug-in information
+
+2021-6-1 5.0.0.124
+1.Supported Visual Studio 2012
+2.Fix the problem that when the "Exception Assistant" is not enabled, clicking the "Continue" button in the "Exception Dialog" will not continue execution
+
+2021-5-23 5.0.0.121
+1.Fix the problem that will cause an error when attaching to a process without opening any solution
+2.Fix an issue that may cause the debugged process to crash when attaching programs
+3.Fix an issue that will cause the previously loaded script to be unable to be obtained when repeated attachments
+
+2021-5-22 5.0.0.118
+1.The first version released to the VS Marketplace, note that the package ID has changed,【please UNINSTALL the previous version by yourself】
+2.Prompt the user to open the search result window to allow the plug-in to start an automatic search when goto the definition fails
+3.Prompt the user that if both Lua and other types are selected in the attach type of debugging, if it fails, you can start another VS to complete the mixed debugging
+
+2021-5-5 5.0.0.111
+1.Integrated exception capture into Visual Studio
+2.Support exception ignore
+
+2021-4-30 5.0.0.110
+1.Fix the problem that the process name and process ID are not set in remote debugging
+
+2021-4-29 5.0.0.108
+1.Fix the problem of not supporting debugging multiple lua programs at the same time
+
+2021-4-18 5.0.0.107
+1.Fix the problem that the breakpoint position is not synchronized with VS for remapping after the script is reloaded
+
+2021-4-13 5.0.0.106
+1.Fix the problem that users may set breakpoints on blank lines, comment lines and other lines of code that will not be executed
+2.Fix a problem that may cause the startup to freeze
+
+2021-4-12 5.0.0.105
+1.Fix the problem that the breakpoint in the loaded file will be bound repeatedly if it is disabled and then enabled
+2.Change to bind the breakpoints after loading the script
+
+2021-4-11 5.0.0.104
+1.Fix the problem that the project template would not be put into the classification of the lua language in VS2019
+2.Fix the problem that the file type in the dialog box of creating a new lua file will be displayed as Lua Editor
+
+2021-4-10 5.0.0.102
+1.Fix the problem that VS will freeze when remote debugging requests to stop the debugging command when the program is in a non-interrupted state
+2.Fix the problem that the configuration settings of loading local symbols are not reloaded when reattaching
+
+2021-4-9 5.0.0.101
+1.Supports detection and setting of text encoding attributes for display and print output
+2.Fix the problem that the key name of the attribute group appearing in the recent version will be added with brackets and quotation marks again
+3.Fixed an issue that caused exceptions to be reported when print redirection was enabled in remote debugging
+
+2021-4-5 5.0.0.98
+1.Fix the problem that assigning a custom file extension to the Lua editor does not take effect
+2.Fix the problem that the color of keywords cannot be customized
+
+2021-4-4 5.0.0.95
+1.Fix the problem that some tables cannot be evaluated because the key string is not an identifier without parentheses
+2.Fix the problem that the table cannot be evaluated when the keys in the tables contain characters that need to be escaped
+
+2021-4-3 5.0.0.94
+1.Fix the problem that the table field whose key is user type is not supported to expand
+2.Cocos supports displaying member fields in metatable
+
+2021-4-1 5.0.0.93
+1.Support the display of member fields of user types in cocos, xlua, and tolua when evaluating expressions 【this feature is currently in official release status】
+
+2021-3-31 5.0.0.92
+1.Fix an assertion error in remote debugging
+
+2021-3-30 5.0.0.91
+1.Fix the problem that after the local debugger is unattached, it cannot be attached by the remote debugger, etc.
+2.Fix the issue that the alarm no longer alarms when the lua symbol is not found in the module that looks like the lua engine
+3.64-bit integer printing support in print redirection during remote debugging
+4.When the number type cannot be converted to an integer, use tostring to print directly to match the format in print as much as possible
+
+2021-3-29 5.0.0.90
+1.Fix the problem that the items in the attribute group do not support expansion when evaluating expressions
+2.Fix a problem that may cause the completion of the traversal modules
+
+2021-3-28 5.0.0.89
+1.Support to expand the base class members of user types in xlua and tolua when evaluating expressions
+2.Fix the problem that the writable attributes of members in the subset of evaluation expressions are not set
+
+2021-3-26 5.0.0.88
+1.Recognize table, userdata and other user types whose names are overloaded by users as classes, and display them with special icons
+
+2021-3-25 5.0.0.86
+1.Fix the issue that some hooked system API functions did not handle LastError
+2.Fix the problem that the members and fields of the user type displayed in xLua do not take effect during remote debugging
+3.Fix a problem that would cause the breakpoint to not be hit
+4.Fix the problem that an error will be reported when the breakpoint is hit after the breakpoint is deleted in the non-breakpoint break state in xLua during remote debugging
+5.Fix the problem that the 64-bit integer type number value in the lua engine (including luajit) of lua5.2 and below will be displayed as a floating point number represented by inaccurate scientific notation
+6.A performance warning was also issued when trying to synchronize the project root directory
+7.Change the doh server, because it was found that the previous doh returned "503 Service Unavailable"
+
+2021-3-23 5.0.0.83
+1.Fix the problem of not supporting modification of variable value during remote debugging
+2.Support pop-up display error message when the modified variable value fails
+3.Fixed an issue in remote debugging that would cause VS to freeze indefinitely when evaluating expressions
+
+2021-3-22 5.0.0.82
+1.Fix the problem that the function of displaying the members and fields of the user types does not take effect during remote debugging
+2.Fix an error in the evaluation expression
+3.Fix a problem that will cause occasional deadlock
+4.Streamline the code
+
+2021-3-21 5.0.0.76
+1.In the debug windows, variables of string type support the display of escape characters and can be displayed in a pop-up dialog box. Variables of function type are now displayed with a dedicated icon
+2.Fix an error in the remote debugging of the display user type added in the previous version
+3.Fix the problem that if the pause button is pressed while loading the script in remote debugging, an error will be reported
+4.Fix the problem that if the searched string is at the end of the specified line in the search results window, the string cannot be highlighted by double-clicking
+5.Optimize the cache hit mechanism
+6.The doh address is changed to solve the problem that domestic users cannot check for updates
+
+2021-3-19 5.0.0.72
+1.Support the display of member fields of user types in cocos, xlua, and tolua when evaluating expressions 【this feature is currently in preview release state】
+2.Fixed an issue that caused a long wait when excluding folders
+3.Fix a deadlock issue that may occur on Win10
+4.Fixed the problem that some button icons in the search results window would not be displayed
+5.Lua interface capture information now supports display the module architecture name
+
+2021-3-8 5.0.0.63
+1.Fix the problem that the evaluation expression does not support displaying the entries in the environment table during local debugging
+
+2021-3-7 5.0.0.62
+1.Fix the problem that if remote debugging is turned on and then a process is started to debug locally, the remote debugging cannot be turned on again without closing the process
+2.Fix an issue that would cause breakpoints to fail to hit during remote debugging
+3.Use cache optimization to reduce the time to open the dialog box attached to the process for the first time
+
+2021-2-25 5.0.0.61
+1.Fixed an issue in recent versions that caused the debugged process to crash when exiting
+
+2021-2-23 5.0.0.60
+1.If a program contains multiple Lua modules, they are also supported for debugging
+2.Fix the issue that package.path will only be displayed for the first virtual machine
+
+2021-2-21 5.0.0.57
+1.Support recording the unload event of Lua modules, so it also fixes some memory leaks related to hook functions
+2.Fix the issue that was introduced in the previous version, even if Lua debugging is checked when attaching, Lua debugging cannot be enabled if the Lua module has not been loaded
+3.Identify efficiency improvements in Lua processes
+
+2021-2-20 5.0.0.55
+1.Fixed the issue that all processes in the attachable process list will be marked as Lua processes
+2.All displayed message texts are translated into English
+3.Fixed the issue that the VS main window was not reactivated when the API file download was completed
+
+2021-1-30 5.0.0.51
+1.Fix the problem that the address information of some built-in C library functions cannot be obtained in LuaJIT
+2.Fix the problem that may cause some debugging output messages to be missed at the end
+3.Improve the error message when the capture fails
+4.Fix the issue that setting Info multi-line messages may be displayed separately
+
+2021-1-29 5.0.0.48
+1.Fix the problem that the last two output results of the last debugging will be displayed in the output window of the new debugging session after restarting debugging
+2.Fix a problem that may cause stack memory confusion
+3.Fix the problem that the attached process cannot be suspended
+4.Fix the problem that if new files are loaded after unattaching, an error will be reported and these files cannot be recorded
+
+2021-1-28 5.0.0.46
+1.C# code specification thread safety: necessary requests are posted to the UI thread for execution
+2.Fix the problem that may report an error when attaching in the previous version and cause the balance of the lua stack to be damaged
+3.Fix the problem of high CPU usage when not entering the VS main window interface in VS2019
+
+2021-1-22 5.0.0.44
+1.Fix a problem that will cause the process to fail to attach
+2.Fixed an issue where script loading triggered in the evaluation expression would cause infinite freezes
+3.Fix the problem that the previous version will not be able to resend the loading notification of some script files that have been loaded when attaching again
+
+2021-1-21 5.0.0.43
+1.As long as the script file is reloaded, a reload notification will be sent regardless of the content change
+2.Fix an issue that may cause a script reload notification to be sent incorrectly after a script load notification is sent
+3.Fixed an issue where unattached and attached again in local debugging may cause the loaded memory file to fail to resend the loading notification
+
+2021-1-20 5.0.0.42
+1.Supports script reload notification so it better supports Lua debugging in Unity
+2.Fix the problem that the button in the auto-complete menu does not support deselection
+3.Fix a thread safety issue introduced in the previous version that may cause VS to crash
+4.Fix the problem that the progress bar will not update when downloading and updating in recent versions
+
+2021-1-19 5.0.0.40
+1.Fixed an issue that caused VS to freeze when the debugged process crashed when it was started or attached
+2.Fix the problem that after the program has loaded a version of the debugging back-end DLL, attaching and debugging to another version will cause a crash
+3.Fix the problem that VS will report an error suggesting to close when the 64-bit process fails to be injected
+4.Fix the problem that the program will be stuck in a dead state if the VS crashes in the interrupted debugging state such as hitting the breakpoint
+5.Fix the problem that the VS started by the administrator cannot be attached to the lua program started by the ordinary account
+
+2021-1-19 5.0.0.39
+1.Fix the problem that any Lua files in the memory cannot be opened after attach debugging when the current solution does not contain any Lua projects
+2.Fix the problem that VS will report an exception when the current solution does not contain any Lua project, and does not open any Lua source file, and attach-debug to a process containing Lua memory files
+
+2021-1-18 5.0.0.36
+1.Supports the function of automatically downloading updates and enabling specified API files based on user selections
+2.Fix that if you have never run VS as an administrator after installing this plug-in, you will not be able to use the Lua keyword auto-completion function
+
+2021-1-11 5.0.0.35
+1.Fix the problem that the debugged program may crash when pdb does not match
+2.Fix the problem that incompatibility warning will be reported when installing to VS2017 and above
+3.Fix the problem that the modification of the previous version is not fully compatible with the lua engine compiled by __stdcall
+4.Fix the problem that an error will be reported when clicking the "Goto symbol" menu button without opening the Lua project
+
+2021-1-8 5.0.0.31
+1.When loading native code symbols is checked, the evaluation expression supports displaying C function information
+2.Fix the problem of not supporting skynet
+3.Fix a problem that will treat real files as memory files
+4.Fix a problem that may cause VS to alarm when unattached in local debugging
+5.Fix a problem that will cause an error when local debugging is unattached
+6.Automatic update improvement and other c# code improvements and fixes
+
+2021-1-1 5.0.0.26
+1.Fix the issue that will cause VS2015 to start stuck
+2.Fix the problem that if the first breakpoint is set on the first valid line of code in the file, and then use Step, it will not be able to break on the next line
+3.Fix a problem that will cause an error when creating a project
+4.Fix the problem that an error will be reported if the PE image file of the module where the lua engine is located has no time stamp
+
+2020-12-31 5.0.0.22
+1.Fix an issue where memory files will be regarded as real files
+2.Fix a problem that may cause the real full path of the file cannot be found
+3.Fix the issue that MSVCR14X.dll cannot be found on Win7
+4.Authorization extension for six months
+
+2020-12-22 5.0.0.20
+1.Fix the problem that if the file directory structure layout of the remote device is different from that of the local project, it may cause abnormal debugging
+2.Fix the problem that the evaluation of variable parameters "..." is not supported in lua5.4
+
+2020-12-16 5.0.0.19
+1.Fix another issue that will cause an error when evaluating "_G" or "package" during remote debugging
+2.Fixed the problem that the preloaded lua file will not be displayed in the debug output window when using local attach debugging
+3.Fix the problem that exception catching in Lua engine compiled with __stdcall will disrupt the call stack balance
+
+2020-12-14 5.0.0.18
+1.Fix the problem that VS will freeze when opening and debugging another project after debugging a project when remote debugging is turned on
+
+2020-12-13 5.0.0.17
+1.Fix the problem that local debugging cannot catch exceptions in lua5.2 and above
+2.Fix a problem that will cause the breakpoint to not hit when using the remote debugging Lua standard program
+3.Fix the problem that an error will be reported when evaluating "_G'" or "package" during remote debugging
+4.Fix a problem that may treat lua files as memory files in remote debugging
+
+2020-12-10 5.0.0.15
+1.Fix an issue in remote debugging that may incorrectly regard lua source code blocks as lua files
+2.Fix the problem that the original line break setting of the file may be changed when formatting the code
+3.Fix the problem that if the lua source file use '\r' as a newline character, it will cause parsing errors
+
+2020-12-9 5.0.0.13
+1.Fix the problem that an error will be reported if mobdebug.lua is not added to the script search path in remote debugging
+2.Fix the problem that remote debugging cannot be used in older versions of cocos
+
+2020-12-7 5.0.0.12
+1.Fix the problem that when users configure online symbol downloads in the _NT_SYMBOL_PATH or _NT_ALTERNATE_SYMBOL_PATH environment variables, the startup will be stuck for a long time
+2.Fix that the local startup debugging in the previous version may not always interrupt on the first source line of the first loaded lua source file
+
+2020-12-6 5.0.0.11
+1.Local debugging supports interruption at the entry point, that is, it will not interrupt at the entry point when it is started by running, and it will be interrupted at the entry point when it is started by step-into and step-over
+2.Fix the problem that an error will be reported when opening the lua file in the lua project after opening Python, nodejs and other projects
+
+2020-12-4 5.0.0.10
+1.Standardize the process of debugging the program by starting the process, so it fixes some problems caused by the irregular process
+2.Fix the problem in the previous version that may cause an error when attaching the process
+
+2020-12-3 5.0.0.9
+1.Fix the problem that the program cannot be debugged by starting the process on Windows 10
+2.Fix some problems that occurred due to upgrading to the previous version
+
+2020-11-30 5.0.0.8
+1.Support auto update
+2.Supports the asynchronous loading mechanism of VS2015 and above
+3.Fixed the problem that the project could not be saved in VS2019
+
+2020-10-30 5.0.0.6
+1.Initial public release
