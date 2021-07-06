@@ -1,3 +1,6 @@
+2021-7-7 5.0.0.136
+1.Fix the problem that Outline Explorer has no icon display in VS2022
+
 2021-7-6 5.0.0.135
 1.Supported Visual Studio 2022
 2.Fix an issue that may cause infinite waiting when unattaching
