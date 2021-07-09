@@ -35,4 +35,6 @@ https://github.com/diegonehab/luasocket
 
 https://github.com/madler/zlib
 
+http://www.7-zip.org/sdk.html
+
 https://sourceforge.net/projects/wtl
