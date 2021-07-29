@@ -1,3 +1,9 @@
+2021-7-30 5.0.0.145
+1.Fix the problem that if the chunkname is not set as the file name, the matching source file may not be found, such as in some lua binding schemes of Unity
+2.Fix a problem that caused the plug-in to fail to load due to a configuration file error
+3.Optimize the performance of the initial analysis project
+4.Browse folders using Vista’s new Shell dialog style
+
 2021-7-12 5.0.0.141
 1.Fix the problem that the memory file cannot be opened if the script root directory is set in the drive root directory
 
