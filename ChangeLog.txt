@@ -1,3 +1,6 @@
+2021-9-3 5.0.0.149
+1.Fine-tune upgrade
+
 2021-7-30 5.0.0.145
 1.Fix the problem that if the chunkname is not set as the file name, the matching source file may not be found, such as in some lua binding schemes of Unity
 2.Fix a problem that caused the plug-in to fail to load due to a configuration file error
