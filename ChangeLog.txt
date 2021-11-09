@@ -1,3 +1,6 @@
+2021-11-9 5.0.0.151
+1.Compile with VS2022 RTM version.
+
 2021-9-10 5.0.0.150
 1.During remote debugging, the maximum number of element enumerations in a single table is limited to 300 to optimize performance and prevent jamming.
 
