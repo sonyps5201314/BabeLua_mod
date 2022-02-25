@@ -1,8 +1,12 @@
+2022-2-25 5.0.0.153
+1.Weakening protection of virtual file system module to reduce false positives
+2.Changed the package ID, because the previous package was taken off the shelf because of a complaint report, 【please UNINSTALL the previous version by yourself】
+
 2021-11-9 5.0.0.151
-1.Compile with VS2022 RTM version.
+1.Compile with VS2022 RTM version
 
 2021-9-10 5.0.0.150
-1.During remote debugging, the maximum number of element enumerations in a single table is limited to 300 to optimize performance and prevent jamming.
+1.During remote debugging, the maximum number of element enumerations in a single table is limited to 300 to optimize performance and prevent jamming
 
 2021-9-3 5.0.0.149
 1.Fine-tune upgrade
